@@ -9,6 +9,12 @@ function App() {
   useEffect(() => {
     console.log("CALL THE API...");
   }, []);
+  useEffect(() => {
+    console.log("I run when 'keyword' changes.");
+  }, [keyword])
+  useEffect(() => {
+    console.log("I run when 'counter' changes.");
+  }, [counter])
 
   return (
     <div>
